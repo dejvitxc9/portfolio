@@ -1,0 +1,72 @@
+.about-me {
+  max-width: 2000px;
+  max-height: 2000px;
+  border-radius: 1.5rem;
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}
+.cv-container {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.picture-section{
+  flex: 1 0 350px;
+  padding: 1rem 1rem 0rem 1rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background-image: url(/public/files/ambientShapes.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.language-section {
+  flex: 1 0 350px;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+}
+
+.name-section{
+  flex: 1 0 350px;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.name-line {
+  font-variant: small-caps;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.qualification {
+  text-decoration: underline var(--accent-color);
+  text-decoration-thickness: 3px;
+}
+
+.language-icon{
+  height: auto;
+  width: 3rem;
+  margin-right: 1rem;
+  transition: 0.2s ease-in-out;;
+}
+
+.language-card{
+  min-width: 200px;
+}
+
+.language-card:hover{
+  scale: 1.03;
+}

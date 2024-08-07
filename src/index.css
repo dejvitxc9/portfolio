@@ -1,0 +1,49 @@
+@font-face {
+  font-family: Poppins;
+  src: url(../public/fonts/Poppins/Poppins-Regular.ttf);
+}
+* {
+  font-family: Poppins, sans-serif;
+}
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0d1117;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.dark-theme {
+  background-color: var(--github-black);
+  transition: 0.3s ease-in;
+}
+.light-theme {
+  background-color: var(--background-light);
+  transition: 0.3s ease-in;
+}
+
+.btn-info {
+  margin-top: 1rem;
+}
+
+:root {
+  --accent-color: #40a8c4;
+
+  --primary-color: #161b22;
+  --secondary-color: #22272e;
+  --dark-color: #161032;
+  --github-black: #0c1015;
+
+  --primary-color-light: #E6E6E6;
+  --secondary-color-light: #D7D7D7;
+  --background-light: #F6F6F6;
+}

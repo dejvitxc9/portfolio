@@ -1,0 +1,24 @@
+<svg id="ec8ygMUbfrd1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 210 297" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+    <style><![CDATA[
+#ec8ygMUbfrd3_to {animation: ec8ygMUbfrd3_to__to 15s linear infinite}@keyframes ec8ygMUbfrd3_to__to { 0% {offset-distance: 0%} 50% {offset-distance: 44.428259%} 56% {offset-distance: 55.745254%} 82% {offset-distance: 86.96688%} 90.333333% {offset-distance: 95.323252%} 100% {offset-distance: 100%}} #ec8ygMUbfrd3_tr {animation: ec8ygMUbfrd3_tr__tr 20s linear infinite}@keyframes ec8ygMUbfrd3_tr__tr { 0% {transform: rotate(0deg)} 100% {transform: rotate(360deg)}} #ec8ygMUbfrd4_to {animation: ec8ygMUbfrd4_to__to 17s linear infinite}@keyframes ec8ygMUbfrd4_to__to { 0% {offset-distance: 0%} 17% {offset-distance: 11.65375%} 50% {offset-distance: 39.062403%} 76.666667% {offset-distance: 74.516085%} 100% {offset-distance: 100%}} #ec8ygMUbfrd4_tr {animation: ec8ygMUbfrd4_tr__tr 14s linear infinite}@keyframes ec8ygMUbfrd4_tr__tr { 0% {transform: rotate(720deg)} 100% {transform: rotate(360deg)}} #ec8ygMUbfrd5_to {animation: ec8ygMUbfrd5_to__to 24s linear infinite}@keyframes ec8ygMUbfrd5_to__to { 0% {offset-distance: 0%} 36.666667% {offset-distance: 33.636701%} 56% {offset-distance: 45.39769%} 70% {offset-distance: 60.859386%} 75% {offset-distance: 73.345335%} 82% {offset-distance: 80.902001%} 100% {offset-distance: 100%}} #ec8ygMUbfrd5_tr {animation: ec8ygMUbfrd5_tr__tr 17s linear infinite}@keyframes ec8ygMUbfrd5_tr__tr { 0% {transform: rotate(0deg)} 100% {transform: rotate(360deg)}}
+]]>    </style>
+    <g transform="translate(-201.120883-288.995757)">
+        <g id="ec8ygMUbfrd3_to" style="offset-path:path('M295.616683,396.514257C274.503772,422.653168,294.351637,432.865693,305.671517,432.865693C313.676051,432.865694,317.722366,431.694555,317.386011,429.785396C321.018243,418.90711,311.737472,399.179647,308.773365,396.200152C306.04888,393.785835,302.948808,392.682047,300.34295,395.349093C298.416623,394.093706,297.002802,394.955381,295.616697,396.310184');offset-rotate:0deg">
+            <g id="ec8ygMUbfrd3_tr" transform="rotate(0)">
+                <path d="M404.68139,236.418c64.01116,18.1954-157.29882,293.29957-189.72047,205.30219-16.42757-44.58689-25.14509-158.45075,3.01899-195.37224c43.94746-57.61246,138.18969-23.7196,186.70148-9.92995Z" transform="scale(0.35105,0.346522) translate(-282.973283,-456.086029)" paint-order="markers stroke fill" fill="#40a8c4" stroke-width="6.01206" stroke-linejoin="round"/>
+            </g>
+        </g>
+        <g id="ec8ygMUbfrd4_to" style="offset-path:path('M314.430398,430.118378C317.024743,422.528357,317.299421,420.111191,316.100067,416.989922C314.430396,412.859691,300.323515,397.456181,290.349243,409.373644C286.860073,418.865924,289.842447,431.104336,295.301455,449.625774C298.924497,452.611114,310.197081,443.646053,314.430398,430.118378');offset-rotate:0deg">
+            <g id="ec8ygMUbfrd4_tr" transform="rotate(720)">
+                <path d="M150.34007,429.03203c246.66831-125.66083,270.673089,40.202778,206.646944,98.472727-43.421006,46.91906-128.597115,100.599127-169.825094,94.219433-74.216093-11.484336-122.52545-149.03199-36.82185-192.69216Z" transform="scale(0.35105,0.346521) translate(-327.224933,-386.075469)" paint-order="markers stroke fill" fill="#a0ebff" stroke-width="7.91722" stroke-linejoin="round"/>
+            </g>
+        </g>
+        <g id="ec8ygMUbfrd5_to" style="offset-path:path('M319.906598,432.335431C331.462823,441.612636,313.048413,457.331286,306.120883,456.218108C299.75522,454.203476,304.31661,455.767381,294.876066,451.890614C288.626918,446.915551,289.281714,440.494606,289.807323,437.761439C290.858318,430.69482,293.614173,428.456435,295.616676,426.741358C297.613661,424.819466,299.84172,423.74099,302.529059,423.685974C306.83141,423.591301,312.311037,426.113807,319.906603,431.978418');offset-rotate:0deg">
+            <g id="ec8ygMUbfrd5_tr" transform="rotate(0)">
+                <path d="M274.14498,363.62249c-20.85584-99.4025,336.11917,100.57292,280.28761,184.41173-28.289,42.47987-119.32205,103.36947-166.36193,78.73303-73.40139-38.44283-98.11981-187.81112-113.92568-263.14476Z" transform="scale(0.35105,0.346521) translate(-345.957592,-487.302638)" paint-order="markers stroke fill" fill="#24d1ff" stroke-width="7.2326" stroke-linejoin="round"/>
+            </g>
+        </g>
+    </g>
+</svg>
