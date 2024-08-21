@@ -1,10 +1,19 @@
 import "./Contact.css";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsFacebook, BsLinkedin } from "react-icons/bs";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaCheck } from "react-icons/fa";
 import { AiFillInstagram, AiFillPhone } from "react-icons/ai";
+import { MdContentCopy } from "react-icons/md";
+import { useState } from "react";
 
 function Contact() {
+  const [contactActionIcon, setContactActionIcon] = useState(
+    <BiLogoGmail size={30} className="primary-font-color" />
+  );
+  const [contactEmailAdress, setContactEmailAdress] = useState(
+    "dawid.uniowski@gmail.com"
+  );
+
   return (
     <div className="contact anim-apear" id="contact">
       <div className="row">
@@ -40,7 +49,7 @@ function Contact() {
             <div className="col-6 mb-4">
               <a
                 href="https://www.linkedin.com/in/dawid-uniowski-673b43287/"
-                target=""
+                target="_blank"
                 rel="noreferrer"
               >
                 <div className="card">
@@ -64,16 +73,37 @@ function Contact() {
               </a>
             </div>
             <div className="col-12 col-md-6 mb-4">
-              <a href="mailto:dawid.uniowski@gmail.com">
-                <div className="card">
-                  <div className="card-body text-center custom-contact-card">
+              <div
+                className="card"
+                onClick={() => {
+                  navigator.clipboard.writeText("dawid.uniowski@gmail.com");
+                }}
+                onMouseEnter={() => {
+                  setContactActionIcon(
+                    <MdContentCopy size={30} className="primary-font-color" />
+                  );
+                  setContactEmailAdress("Skopiuj: dawid.uniowski@gmail.com");
+                }}
+                onMouseLeave={() => {
+                  setContactActionIcon(
                     <BiLogoGmail size={30} className="primary-font-color" />
-                    <p className="m-0 primary-font-color link">
-                      dawid.uniowski@gmail.com
-                    </p>
-                  </div>
+                  );
+                  setContactEmailAdress("dawid.uniowski@gmail.com");
+                }}
+                onMouseDownCapture={() => {
+                  setContactActionIcon(
+                    <FaCheck size={30} className="primary-font-color" />
+                  );
+                  setContactEmailAdress("Skopiowano");
+                }}
+              >
+                <div className="card-body text-center custom-contact-card">
+                  {contactActionIcon}
+                  <p className="m-0 primary-font-color link">
+                    {contactEmailAdress}
+                  </p>
                 </div>
-              </a>
+              </div>
             </div>
             <div className="col-12 col-md-6 mb-4">
               <a href="tel:+48793070996">
