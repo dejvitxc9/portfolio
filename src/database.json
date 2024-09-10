@@ -29,15 +29,16 @@
     },
     {
       "id": 3,
-      "name": "Pepeweb.pl",
+      "name": "AlfredWeb",
       "imageLink": "web3.jpg",
       "description": [
-        "Strona Pepeweb.pl powstała na podobieństwo polskiego serwisu Filmweb. Na stronie dodałem w pełni działający system zarządzania listą filmów.",
-        "W sekcji dodawanie po wpisaniu danych dotyczących filmu można za pomocą linku dodać plakat promujacy film.",
+        "Strona AlfredWeb powstała na podobieństwo polskiego serwisu Filmweb. Na stronie dodałem w pełni działający system zarządzania listą filmów.",
+        "W sekcji dodawanie po wpisaniu danych dotyczących filmu można dodać plakat promujacy film.",
+        "Baza danych strony oparta jest o Firebase od Google",
         "Planuję dodanie opcji komentowania i oceniania filmów."
       ],
-      "simulationLink": "",
-      "gitHubLink": "https://github.com/dejvitxc9/pepeweb"
+      "simulationLink": "https://alfred-web.netlify.app",
+      "gitHubLink": "https://github.com/dejvitxc9/alfredweb"
     }
   ],
   "androidProjects": [
