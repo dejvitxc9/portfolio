@@ -33,9 +33,9 @@
       "imageLink": "web3.jpg",
       "description": [
         "Strona AlfredWeb powstała na podobieństwo polskiego serwisu Filmweb. Na stronie dodałem w pełni działający system zarządzania listą filmów.",
-        "W sekcji dodawanie po wpisaniu danych dotyczących filmu można dodać plakat promujacy film.",
+        "W trakcie dodawania filmu, należy wgrać plakat do filmu",
         "Baza danych strony oparta jest o Firebase od Google",
-        "Planuję dodanie opcji komentowania i oceniania filmów."
+        "Dodałem opcje komentowania filmów dodanych przez innych użytkowników."
       ],
       "simulationLink": "https://alfred-web.netlify.app",
       "gitHubLink": "https://github.com/dejvitxc9/alfredweb"
