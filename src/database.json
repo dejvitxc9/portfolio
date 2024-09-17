@@ -101,6 +101,15 @@
       ]
     },
     {
+      "name": "Redux",
+      "icon": "redux.png",
+      "skills": [
+        "Zarządzanie stanem aplikacji za pomocą Reduxa i Redux Toolkit",
+        "Tworzenie akcji, reducerów i store do centralizacji stanu",
+        "Integracja Reduxa z Reactem za pomocą react-redux"
+      ]
+    },
+    {
       "name": "JavaScript",
       "icon": "js.png",
       "skills": [
@@ -136,7 +145,7 @@
       "icon": "bootstrap.png",
       "skills": [
         "Tworzenie responsywnych UI",
-        "Korzystanie siatki Bootstrap",
+        "Korzystanie z siatki Bootstrap",
         "Korzystanie z komponentów Bootstrap",
         "Dostosowywanie Bootstrapa do własnych potrzeb",
         "Doświadczenie z Bootstrapem w wersji 5"
