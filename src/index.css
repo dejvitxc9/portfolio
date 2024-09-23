@@ -24,11 +24,9 @@ a {
 
 .dark-theme {
   background-color: var(--github-black);
-  transition: 0.3s ease-in;
 }
 .light-theme {
   background-color: var(--background-light);
-  transition: 0.3s ease-in;
 }
 
 .btn-info {

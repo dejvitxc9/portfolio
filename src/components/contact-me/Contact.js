@@ -6,7 +6,7 @@ import { AiFillInstagram, AiFillPhone } from "react-icons/ai";
 import { MdContentCopy } from "react-icons/md";
 import { useState } from "react";
 
-function Contact() {
+function Contact({ sectionTitle, textSecContact }) {
   const [contactActionIcon, setContactActionIcon] = useState(
     <BiLogoGmail size={30} className="primary-font-color" />
   );
@@ -18,7 +18,7 @@ function Contact() {
     <div className="contact anim-apear" id="contact">
       <div className="row">
         <div className="col-md-6 mb-4">
-          <h2 className="primary-font-color">Kontakt</h2>
+          <h2 className="primary-font-color">{sectionTitle}</h2>
           <div className="row">
             <div className="col-6 mb-4">
               <a
@@ -82,7 +82,7 @@ function Contact() {
                   setContactActionIcon(
                     <MdContentCopy size={30} className="primary-font-color" />
                   );
-                  setContactEmailAdress("Skopiuj: dawid.uniowski@gmail.com");
+                  setContactEmailAdress(textSecContact.mailCpMsg1);
                 }}
                 onMouseLeave={() => {
                   setContactActionIcon(
@@ -94,7 +94,7 @@ function Contact() {
                   setContactActionIcon(
                     <FaCheck size={30} className="primary-font-color" />
                   );
-                  setContactEmailAdress("Skopiowano");
+                  setContactEmailAdress(textSecContact.mailCpMsg2);
                 }}
               >
                 <div className="card-body text-center custom-contact-card">
@@ -118,23 +118,23 @@ function Contact() {
           </div>
         </div>
         <div className="col-md-6 mb-4">
-          <h2 className="primary-font-color">Formularz</h2>
+          <h2 className="primary-font-color">{textSecContact.form}</h2>
           <form name="contact" action="/contact" method="post">
             <div className="mb-3">
               <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="name" className="form-label primary-font-color">
-                Imię i nazwisko
+                {textSecContact.formTxt1}
               </label>
               <input
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Imie i nazwisko"
+                placeholder={textSecContact.formTxt1}
                 className="form-control"
                 required
               />
               <label htmlFor="email" className="form-label primary-font-color">
-                Adres e-mail
+                {textSecContact.formTxt2}
               </label>
               <input
                 type="email"
@@ -148,17 +148,17 @@ function Contact() {
                 htmlFor="message"
                 className="form-label primary-font-color"
               >
-                Wiadomość
+                {textSecContact.formTxt3}
               </label>
               <textarea
                 id="message"
                 name="message"
-                placeholder="Wiadomość..."
+                placeholder={textSecContact.formTxt4}
                 className="form-control"
                 required
               />
               <button type="submit" className="btn btn-info primary-font-color">
-                Wyślij
+                {textSecContact.formTxt5}
               </button>
             </div>
           </form>

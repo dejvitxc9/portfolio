@@ -11,6 +11,8 @@ a {
   height: 40rem;
 }
 
+
+
 @media (prefers-reduced-motion: no-preference) {
   .anim-apear {
     animation-name: apear;
@@ -36,7 +38,6 @@ a {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  transition: 0.3s ease-in-out;
 
   .navigationbar {
     background-color: var(--primary-color);
@@ -116,7 +117,6 @@ a {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  transition: 0.3s ease-in-out;
 
   .navigationbar {
     background-color: var(--secondary-color-light);

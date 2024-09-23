@@ -2,7 +2,7 @@ import "./AboutMe.css";
 import { Tooltip, OverlayTrigger, Card } from "react-bootstrap";
 import Accordion from "react-bootstrap/Accordion";
 
-function AboutMe({ languageSkills }) {
+function AboutMe({ sectionTitle, languageSkills, textSecAboutMe }) {
   const skills = () => {
     return languageSkills.map((language, index) => {
       return (
@@ -33,43 +33,43 @@ function AboutMe({ languageSkills }) {
 
   const tooltip1 = (
     <Tooltip id="tooltip">
-      <strong>INF.02</strong> Administracja i eksploatacja systemów
-      komputerowych, urządzeń peryferyjnych i lokalnych sieci komputerowych.
+      <strong>INF.02</strong> {textSecAboutMe.inf02text}
     </Tooltip>
   );
   const tooltip2 = (
     <Tooltip id="tooltip">
-      <strong>INF.03</strong> Tworzenie i administrowanie stronami i aplikacjami
-      internetowymi oraz bazami danych.
+      <strong>INF.03</strong> {textSecAboutMe.inf03text}
     </Tooltip>
   );
   const tooltip3 = (
     <Tooltip id="tooltip">
-      <strong>INF.04</strong> Projektowanie, programowanie i testowanie
-      aplikacji.
+      <strong>INF.04</strong> {textSecAboutMe.inf04text}
     </Tooltip>
   );
 
   return (
     <div className="about-me" id="o-mnie">
-      <h2 className="primary-font-color">O mnie</h2>
+      <h2 className="primary-font-color">{sectionTitle}</h2>
       <div className="cv-container">
         <div className="name-section">
           <h1 className="primary-font-color name-line">
-            Nazywam się{" "}
+            {textSecAboutMe.myNameis}
             <span className="accent-font-color no-wrap">Dawid Uniowski</span>
           </h1>
 
           <p className="primary-font-color">
-            Jestem{" "}
-            <span className="accent-font-color">Technikiem Programistą</span>{" "}
-            oraz{" "}
-            <span className="accent-font-color">Technikiem Informatykiem</span>.
+            {textSecAboutMe.helloTxt1}
+            <span className="accent-font-color">
+              {textSecAboutMe.helloTxt2}
+            </span>{" "}
+            {textSecAboutMe.helloTxt3}
+            <span className="accent-font-color">
+              {textSecAboutMe.helloTxt4}
+            </span>
+            .
           </p>
           <p className="primary-font-color">
-            Programowania uczę się od 2020 roku. Szkołę średnią ukończyłem w
-            2024 roku. W trakcie mojej edukacji zdobyłem następujące
-            kwalifikacje:{" "}
+            {textSecAboutMe.helloTxt5}
             <span className="no-wrap primary-font-color">
               <OverlayTrigger placement="bottom" overlay={tooltip1}>
                 <a>
@@ -109,7 +109,7 @@ function AboutMe({ languageSkills }) {
         </div>
 
         <div className="language-section">
-          <h2 className="my-4 primary-font-color">Moje umiejętności:</h2>
+          <h2 className="my-4 primary-font-color">{textSecAboutMe.mySkills}:</h2>
           <Accordion defaultActiveKey="0">{skills()}</Accordion>
         </div>
       </div>

@@ -1,19 +1,15 @@
 .tile {
   flex: 1 0 350px;
-  /* height: 25rem; */
   border-radius: 1rem;
   box-shadow: 0 0 transparent;
   transform: scale(1);
-  transition: 0.3s ease-in-out;
   cursor: pointer;
   text-decoration: none;
 }
 .tile:hover {
-  transition: 0.3s ease-in-out;
   box-shadow: 5px 5px var(--accent-color);
   transform: scale(1.02);
   z-index: 1;
-  /* Do usunięcia */
   .project-picture {
     filter: blur(0px);
   }

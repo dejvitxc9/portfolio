@@ -1,7 +1,7 @@
 import "./ProjectDetails.css";
 import { FaGithubSquare } from "react-icons/fa";
 
-function ProjectDetails({ appData }) {
+function ProjectDetails({ appData, appBtnTxt }) {
   window.scroll({
     top: 0,
     behavior: "smooth",
@@ -28,7 +28,7 @@ function ProjectDetails({ appData }) {
             <button
               className="btn btn-info primary-font-color"
               onClick={tryMyApp}
-            >{`Wypróbuj aplikację ${appData.name}`}</button>
+            >{`${appBtnTxt.tryApp} ${appData.name}`}</button>
           ) : (
             <></>
           )}
@@ -39,7 +39,7 @@ function ProjectDetails({ appData }) {
               onClick={gitHubApp}
             >
               <FaGithubSquare size={30} />
-              {`Repozytorium ${appData.name} w serwisie GitHub`}
+              {`${appBtnTxt.githubRepo1} ${appData.name} ${appBtnTxt.githubRepo2}`}
             </button>
           ) : (
             <></>

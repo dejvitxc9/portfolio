@@ -50,7 +50,6 @@
         "Gra TikTakToe to jedno z moich osiągnieć w programowaniu w języku Java. TikTakToe to klasyczna gra w kółko i krzyżyk, która została zaprojektowana i zaimplementowana przy użyciu języka programowania Java oraz XML.",
         "Gra ma zarówno tryb dwuosobowy jak i jednoosobowy. W trybie dwuosobowym grcze grają turami a aktualną kolejność wskazazana jest u góry ekranu. Tryb gry z komputerem można włączyć klikając na nazwę Player 2",
         "W aplikacji wykorzystałem RecyclerView.Adapter do wyświetlania planszy rozgrywki."
-        
       ],
       "simulationLink": "",
       "gitHubLink": ""
@@ -151,5 +150,38 @@
         "Doświadczenie z Bootstrapem w wersji 5"
       ]
     }
-  ]
+  ],
+  "appBtnTxt":{
+    "tryApp": "Wypróbuj aplikację ",
+    "githubRepo1": "Repozytorium ",
+    "githubRepo2": " w serwisie GitHub"
+  },
+  "textSections": {
+    "aboutMeText": "O mnie",
+    "reactProjectsText": "Projekty React JS",
+    "androidProjectsText": "Projekty Android - Java",
+    "contactText": "Kontakt"
+  },
+  "textSecAboutMe":{
+    "inf02text": "Administracja i eksploatacja systemów komputerowych, urządzeń peryferyjnych i lokalnych sieci komputerowych.",
+    "inf03text": "Tworzenie i administrowanie stronami i aplikacjami internetowymi oraz bazami danych.",
+    "inf04text": "Projektowanie, programowanie i testowanie aplikacji.",
+    "myNameis": "Nazywam się ",
+    "helloTxt1": "Jestem ",
+    "helloTxt2": "Technikiem Programistą",
+    "helloTxt3": "oraz ",
+    "helloTxt4": "Technikiem Informatykiem",
+    "helloTxt5": "Programowania uczę się od 2020 roku. Szkołę średnią ukończyłem w 2024 roku. W trakcie mojej edukacji zdobyłem następującekwalifikacje: ",
+    "mySkills": "Moje umiejętności"
+  },
+  "textSecContact":{
+    "mailCpMsg1":"Skopiuj: dawid.uniowski@gmail.com",
+    "mailCpMsg2":"Skopiowano do schowka",
+    "form": "Formularz",
+    "formTxt1": "Imię i nazwisko",
+    "formTxt2": "Adres e-mail",
+    "formTxt3": "Wiadomość",
+    "formTxt4": "Wiadomość...",
+    "formTxt5": "Wyślij"
+  }
 }

@@ -4,9 +4,9 @@ import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import Flag from "react-world-flags";
 
-function Layout({ handleThemeChange, isThemeDark }) {
- 
+function Layout({ handleThemeChange, isThemeDark, handleLanguageChange, textSections }) {
   const handleChange = (checked) => {
     if (checked) {
       handleThemeChange("dark-theme");
@@ -82,7 +82,7 @@ function Layout({ handleThemeChange, isThemeDark }) {
               onClick={closeMenu}
               className="primary-font-color"
             >
-              O mnie
+              {textSections.aboutMeText}
             </Link>
           </li>
           <li className="nav-item">
@@ -95,7 +95,7 @@ function Layout({ handleThemeChange, isThemeDark }) {
               onClick={closeMenu}
               className="primary-font-color"
             >
-              Projekty React JS
+              {textSections.reactProjectsText}
             </Link>
           </li>
           <li className="nav-item">
@@ -108,7 +108,7 @@ function Layout({ handleThemeChange, isThemeDark }) {
               onClick={closeMenu}
               className="primary-font-color"
             >
-              Projekty Android - Java
+              {textSections.androidProjectsText}
             </Link>
           </li>
           <li className="nav-item">
@@ -121,7 +121,7 @@ function Layout({ handleThemeChange, isThemeDark }) {
               onClick={closeMenu}
               className="primary-font-color"
             >
-              Kontakt
+              {textSections.contactText}
             </Link>
           </li>
           <Switch
@@ -147,6 +147,20 @@ function Layout({ handleThemeChange, isThemeDark }) {
             onColor="#222222"
             offColor="#c4c4c4"
           />
+          <li className="nav-item">
+            <Flag
+              code="PL"
+              height={32}
+              width={64}
+              onClick={() => handleLanguageChange(true)}
+            />
+            <Flag
+              code="GB"
+              height={32}
+              width={64}
+              onClick={() => handleLanguageChange(false)}
+            />
+          </li>
         </ul>
       </nav>
       <main>

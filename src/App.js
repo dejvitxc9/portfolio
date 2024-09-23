@@ -4,11 +4,13 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import Main from "./components/main/Main";
-import db from "./database.json";
+import dbPl from "./databasePl.json";
+import dbEn from "./databaseEn.json";
 import ProjectDetails from "./components/project-details/ProjectDetails";
 
 function App() {
   const [isThemeDark, setIsThemeDark] = useState(true);
+  const [db, setDb] = useState(dbPl);
 
   useEffect(() => {
     const checkDarkMode = () => {
@@ -42,6 +44,14 @@ function App() {
     document.body.classList.add(newTheme);
   };
 
+  const handleLanguageChange = (isLanguagePl) => {
+    if (isLanguagePl) {
+      setDb(dbPl);
+    } else {
+      setDb(dbEn);
+    }
+  };
+
   return (
     <BrowserRouter>
       <Routes>
@@ -51,6 +61,8 @@ function App() {
             <Layout
               handleThemeChange={handleThemeChange}
               isThemeDark={isThemeDark}
+              handleLanguageChange={handleLanguageChange}
+              textSections={db.textSections}
             />
           }
         >
@@ -60,7 +72,9 @@ function App() {
               <Route
                 key={index}
                 path={appData.name}
-                element={<ProjectDetails appData={appData} />}
+                element={
+                  <ProjectDetails appData={appData} appBtnTxt={db.appBtnTxt} />
+                }
               />
             );
           })}
@@ -69,7 +83,9 @@ function App() {
               <Route
                 key={index}
                 path={appData.name}
-                element={<ProjectDetails appData={appData} />}
+                element={
+                  <ProjectDetails appData={appData} appBtnTxt={db.appBtnTxt} />
+                }
               />
             );
           })}
