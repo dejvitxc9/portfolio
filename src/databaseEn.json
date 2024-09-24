@@ -122,7 +122,8 @@
       "name": "Java",
       "icon": "java.png",
       "skills": [
-        "Object-oriented programming, mobile app development",
+        "Object-oriented programming",      
+        "Mobile app development",
         "Working with databases",
         "Creating user interfaces using Java Swing"
       ]
@@ -169,7 +170,7 @@
     "helloTxt2": "a Software Technician",
     "helloTxt3": "and ",
     "helloTxt4": "an IT Technician",
-    "helloTxt5": "I have been learning programming since 2020. I graduated from high school in 2024. During my education, I obtained the following qualifications: ",
+    "helloTxt5": "I have been learning programming since 2020. I graduated from high school. During my education, I obtained the following qualifications: ",
     "mySkills": "My skills"
   },
   "textSecContact": {
