@@ -124,8 +124,7 @@
       "skills": [
         "Object-oriented programming, mobile app development",
         "Working with databases",
-        "Creating user interfaces",
-        "Using popular Java frameworks"
+        "Creating user interfaces using Java Swing"
       ]
     },
     {
@@ -135,7 +134,7 @@
         "Working with MySQL databases, Apache",
         "Collaborating with CMS systems",
         "Creating and managing database tables",
-        "Efficient use of CRUD operations"
+        "Efficient implementation of CRUD operations"
       ]
     },
     {
@@ -152,8 +151,8 @@
   ],
   "appBtnTxt": {
     "tryApp": "Try",
-    "githubRepo1": "Repository ",
-    "githubRepo2": " on GitHub"
+    "githubRepo1": "",
+    "githubRepo2": "GitHub Repository"
   },
   "textSections": {
     "aboutMeText": "About me",
@@ -175,12 +174,12 @@
   },
   "textSecContact": {
   "mailCpMsg1":"Copy: dawid.uniowski@gmail.com",
-  "mailCpMsg2":"Coppied to clipboard",
+  "mailCpMsg2":"Copied to clipboard",
   "form": "Form",
   "formTxt1": "Full Name",
   "formTxt2": "Email Address",
   "formTxt3": "Message",
-  "formTxt4": "Message...",
+  "formTxt4": "Your message...",
   "formTxt5": "Send"
   }
 }
