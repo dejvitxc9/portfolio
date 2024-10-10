@@ -129,29 +129,31 @@ function Layout({
               {textSections.contactText}
             </Link>
           </li>
-          <Switch
-            className="theme-switch"
-            onChange={handleChange}
-            checked={isThemeDark}
-            checkedIcon={
-              <img
-                src="/icons/dark-theme.png"
-                alt="dark mode"
-                height={28}
-                width={28}
-              />
-            }
-            uncheckedIcon={
-              <img
-                src="/icons/light-theme.png"
-                alt="light mode"
-                height={28}
-                width={28}
-              />
-            }
-            onColor="#222222"
-            offColor="#c4c4c4"
-          />
+          <li>
+            <Switch
+              className="theme-switch"
+              onChange={handleChange}
+              checked={isThemeDark}
+              checkedIcon={
+                <img
+                  src="/icons/dark-theme.png"
+                  alt="dark mode"
+                  height={28}
+                  width={28}
+                />
+              }
+              uncheckedIcon={
+                <img
+                  src="/icons/light-theme.png"
+                  alt="light mode"
+                  height={28}
+                  width={28}
+                />
+              }
+              onColor="#222222"
+              offColor="#c4c4c4"
+            />
+          </li>
           <li className="nav-item">
             <Flag
               code="PL"

@@ -72,27 +72,15 @@ function AboutMe({ sectionTitle, languageSkills, textSecAboutMe }) {
             {textSecAboutMe.helloTxt5}
             <span className="no-wrap primary-font-color">
               <OverlayTrigger placement="bottom" overlay={tooltip1}>
-                <a>
-                  <span className="qualification primary-font-color">
-                    Inf.02
-                  </span>
-                </a>
+                <span className="qualification primary-font-color">Inf.02</span>
               </OverlayTrigger>
               <span className="primary-font-color">, i </span>
               <OverlayTrigger placement="bottom" overlay={tooltip2}>
-                <a>
-                  <span className="qualification primary-font-color">
-                    Inf.03
-                  </span>
-                </a>
+                <span className="qualification primary-font-color">Inf.03</span>
               </OverlayTrigger>
               <span className="primary-font-color">, i </span>
               <OverlayTrigger placement="bottom" overlay={tooltip3}>
-                <a>
-                  <span className="qualification primary-font-color">
-                    Inf.04
-                  </span>
-                </a>
+                <span className="qualification primary-font-color">Inf.04</span>
               </OverlayTrigger>
               <span className="primary-font-color">.</span>
             </span>
@@ -109,7 +97,9 @@ function AboutMe({ sectionTitle, languageSkills, textSecAboutMe }) {
         </div>
 
         <div className="language-section">
-          <h2 className="my-4 primary-font-color">{textSecAboutMe.mySkills}:</h2>
+          <h2 className="my-4 primary-font-color">
+            {textSecAboutMe.mySkills}:
+          </h2>
           <Accordion defaultActiveKey="0">{skills()}</Accordion>
         </div>
       </div>
