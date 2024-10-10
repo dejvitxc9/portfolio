@@ -6,7 +6,12 @@ import { Link } from "react-scroll";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import Flag from "react-world-flags";
 
-function Layout({ handleThemeChange, isThemeDark, handleLanguageChange, textSections }) {
+function Layout({
+  handleThemeChange,
+  isThemeDark,
+  handleLanguageChange,
+  textSections,
+}) {
   const handleChange = (checked) => {
     if (checked) {
       handleThemeChange("dark-theme");
@@ -150,12 +155,14 @@ function Layout({ handleThemeChange, isThemeDark, handleLanguageChange, textSect
           <li className="nav-item">
             <Flag
               code="PL"
+              alt="jezyk polski"
               height={32}
               width={64}
               onClick={() => handleLanguageChange(true)}
             />
             <Flag
               code="GB"
+              alt="english language"
               height={32}
               width={64}
               onClick={() => handleLanguageChange(false)}
